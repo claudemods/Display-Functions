@@ -1,0 +1,21 @@
+# Maintainer: claudemods
+# Contributor: empty
+
+pkgname=display-functions-claudemods
+pkgver=1.01
+pkgrel=1
+pkgdesc="function for displays on plasma 6"
+arch=('any')
+url="https://github.com/claudemods/Display-Functions.git"
+license=('GPL')
+depends=('python' 'python-pyqt6' 'qt6-base' 'qt6-declarative')
+source=("${pkgname}-${pkgver}.tar.gz")
+sha256sums=('SKIP')
+
+package() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    install -Dm755 Display-Functions.py "${pkgdir}/usr/bin/Display-Functions"
+    install -Dm644 Ds-claudemods.qml "${pkgdir}/usr/bin/Ds-claudemods.qml"
+    install -Dm644 Display-Functions.desktop "${pkgdir}/usr/share/applications/Display-Functions.desktop"
+    install -Dm644 Display-Functions.png "${pkgdir}/usr/share/icons/hicolor/256x256/apps/Display-Functions.png"
+}
