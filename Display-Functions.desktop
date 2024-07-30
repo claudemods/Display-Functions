@@ -1,0 +1,21 @@
+[Desktop Entry]
+Comment[en_GB]=claudemods
+Comment=
+Comment[en_US]=
+Exec=/usr/bin/Display-Functions
+GenericName[en_GB]=Display-Functions
+GenericName=Display-Functions
+GenericName[en_US]=Display-Functions
+Icon=/usr/share/icons/hicolor/256x256/apps/offMonitor.svg
+MimeType=
+Name[en_GB]=Display-Functions
+Name=Display-Functions
+Name[en_US]=Display-Functions
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=true
+TerminalOptions=\s--noclose
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
